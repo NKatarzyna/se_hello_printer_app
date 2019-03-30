@@ -7,3 +7,7 @@ script:
   - make test
   - make lint
   - make docker_build
+deploy:
+  provider: heroku
+  app: arcane-dusk-33275
+  api_key: ${HEROKU_API_KEY}
