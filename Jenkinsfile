@@ -13,7 +13,7 @@ pipeline {
                         thresholds: [
                             [$class: 'SkippedThreshold', failureThreshold: '0'],
                             [$class: 'FailedThreshold', failureThreshold: '1']],
-                        tools: [[$class: 'JUnitType', pattern: 'test_requirements.xml']]])
+                        tools: [[$class: 'JUnitType', pattern: 'test_results.xml']]])
         	      }
         }
         stage('Linter') {
